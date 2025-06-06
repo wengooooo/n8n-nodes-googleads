@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-googleads",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "google ads advanced",
   "keywords": [
     "n8n-community-node-package"
