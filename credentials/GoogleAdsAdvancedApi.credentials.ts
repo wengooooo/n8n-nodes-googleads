@@ -6,7 +6,7 @@ import {JWT} from 'google-auth-library';
 import type {
 	Icon,
 	ICredentialDataDecryptedObject,
-	ICredentialTestRequest,
+	// ICredentialTestRequest,
 	ICredentialType,
 	IHttpRequestOptions,
 	INodeProperties,
@@ -220,8 +220,8 @@ const regions = [
 	},
 ] as const;
 
-export class GoogleAdvancedApi implements ICredentialType {
-	name = 'googleAdvancedApi';
+export class GoogleAdsAdvancedApi implements ICredentialType {
+	name = 'googleAdsAdvancedApi';
 
 	displayName = 'Google Ads Advanced Service Account API';
 
@@ -322,12 +322,12 @@ export class GoogleAdvancedApi implements ICredentialType {
 	];
 
 	//这个test是当凭证保存触发一个测试函数来验证凭证是否正常，优先级别最高，之后是supportedNodes和testBy
-	test: ICredentialTestRequest = {
-		request: {
-			baseURL: 'https://actionnetwork.org/api/v2',
-			url: '/events?per_page=1',
-		},
-	};
+	// test: ICredentialTestRequest = {
+	// 	request: {
+	// 		baseURL: 'https://actionnetwork.org/api/v2',
+	// 		url: '/events?per_page=1',
+	// 	},
+	// };
 
 	async authenticate(
 		credentials: ICredentialDataDecryptedObject,

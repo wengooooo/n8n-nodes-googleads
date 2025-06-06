@@ -26,7 +26,7 @@ export class GoogleAdsAdvanced implements INodeType {
 		outputs: [NodeConnectionType.Main],
 		credentials: [
 			{
-				name: 'googleAdvancedApi',
+				name: 'googleAdsAdvancedApi',
 				required: true,
 				testedBy: 'testGoogleAdsTokenAuth',
 				displayOptions: {
