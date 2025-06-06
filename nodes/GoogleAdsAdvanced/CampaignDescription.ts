@@ -35,7 +35,7 @@ export const campaignOperations: INodeProperties[] = [
 		},
 		options: [
 			{
-				name: '🔑 Get Many',
+				name: 'Get Many',
 				value: 'getAll',
 				description: 'Get many campaigns linked to the specified account',
 				routing: {

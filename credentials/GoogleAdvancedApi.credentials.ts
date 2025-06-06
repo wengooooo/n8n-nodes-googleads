@@ -223,9 +223,9 @@ const regions = [
 export class GoogleAdvancedApi implements ICredentialType {
 	name = 'googleAdvancedApi';
 
-	displayName = 'Google Service Account API Advanced';
+	displayName = 'Google Ads Advanced Service Account API';
 
-	documentationUrl = 'google/service-account';
+	documentationUrl = 'https://developers.google.com/google-ads';
 
 	supportedNodes = ['googleAdsAdvanced'];
 
@@ -395,7 +395,6 @@ export class GoogleAdvancedApi implements ICredentialType {
 
 		const tokens = await authClient.authorize(); // 这一步包含了 JWT 签名和与 token 端点的交互
 		const access_token = tokens.access_token
-		console.log('access_token', access_token)
 		return {
 			...requestOptions,
 			headers: {
